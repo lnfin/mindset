@@ -49,7 +49,6 @@ nbclient==0.6.3
 nbconvert==6.5.0
 nbformat==5.4.0
 nest-asyncio==1.5.5
-networkx==2.8
 notebook==6.4.11
 numpy==1.22.3
 opencv-python-headless==4.5.5.64
