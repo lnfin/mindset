@@ -14,7 +14,7 @@ from utils.cfgtools import Config
 # https://drive.google.com/uc?id=18XL-UDLxMXjCQz751xYsoXPXYr-q1L-0&export=download&confirm=t
 # https://drive.google.com/uc?id=17SahTKf12vbtu5Yb2qrcXbj09lKsGHK_&export=download&confirm=t
 drive_links = {
-    "unet.pth": "https://drive.google.com/uc?id=18XL-UDLxMXjCQz751xYsoXPXYr-q1L-0&export=download&confirm=t",
+    "unet.pth": "https://drive.google.com/uc?id=17SahTKf12vbtu5Yb2qrcXbj09lKsGHK_&export=download&confirm=t",
     "modnet.ckpt": "https://drive.google.com/uc?id=1oqMQK314qgsBEO6fFqFAqVYfLT2Kz1gr&authuser=0&export=download",
     "test.cfg": "https://drive.google.com/uc?id=17gXaQrl3nsH6Z5uZbsJ11K8sqODPBx56&authuser=0&export=download"
 }
