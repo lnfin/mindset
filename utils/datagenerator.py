@@ -26,8 +26,6 @@ def get_paths(data_folder):
     cor_mask_paths = []
     for path in paths:
         root = ET.parse(os.path.join(voc_anno_path, path.split('/')[-1].split('.')[0] + '.xml')).getroot()
-        # if root[-1][0].text != 'person':
-        #     continue
         if 'VOC' in root[-1][0].text:
             continue
         im = np.array(Image.open(path))
@@ -39,13 +37,6 @@ def get_paths(data_folder):
     for mask_path in cor_mask_paths:
         image_path = os.path.join(voc_image_path, mask_path.split('/')[-1].split('.')[0] + '.jpg')
         image_with_mask.append([image_path, mask_path])
-    # # assert 1==2, voc_image_path
-    # voc_images = [os.path.join(voc_image_path, x) for x in os.listdir(voc_image_path)]
-    # voc_images_with_masks = []
-    # for path in voc_images:
-    #     mask_path = os.path.join(voc_mask_path, path.split('/')[-1].split('.')[0] + '.png')
-    #     if os.path.exists(mask_path):
-    #         voc_images_with_masks.append([path, mask_path])
     return image_with_mask
 
 
